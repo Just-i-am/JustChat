@@ -1,0 +1,45 @@
+﻿@page
+    <div class="container">
+        <div class="row">
+        <div class="chatwindow">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+        <div class="row">
+            
+            <div class="col-8"><input type="text" id="messageInput" style="width: 100%" /></div>
+            <div class="col-auto">
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+            <div class="col-auto">
+                <input type="button" id="sendRoomButton" value="Send room Message" />
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div id="info">Group</div>
+            <div class="col-2"><input type="text" id="roomInput" /></div>
+            <div class="col-auto">
+                <input type="button" id="joinRoomButton" value="Join room" />
+            </div>
+            <div class="col-auto">
+                <input type="button" id="leaveRoomButton" value="Leave room" />
+            </div>
+        </div>
+       
+        
+       
+        
+        <div class="row">&nbsp;</div>
+        
+        
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
